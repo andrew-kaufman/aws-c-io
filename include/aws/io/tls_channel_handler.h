@@ -403,7 +403,7 @@ AWS_IO_API void aws_tls_connection_options_set_callbacks(
 AWS_IO_API int aws_tls_connection_options_set_server_name(
     struct aws_tls_connection_options *conn_options,
     struct aws_allocator *allocator,
-    struct aws_byte_cursor *server_name);
+    const struct aws_byte_cursor *server_name);
 
 /**
  * Sets alpn list in the form <protocol1;protocol2;...>. A maximum of 4 protocols are supported.
